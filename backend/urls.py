@@ -5,7 +5,7 @@ from backend import views
 urlpatterns = [
     # category page
     path('categorypage/', views.categorypage, name="categorypage"),
-    path('indexpage/', views.indexpage, name="indexpage"),
+    path('', views.indexpage, name="indexpage"),
     path('categorysave/', views.categorysave, name="categorysave"),
     path('categorydisplay/', views.categorydisplay, name="categorydisplay"),
     path('categoryedit/<int:dataid>/', views.categoryedit, name="categoryedit"),
